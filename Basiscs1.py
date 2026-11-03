@@ -1,0 +1,25 @@
+import tkinter as tk
+screen=tk.Tk()
+screen.title("GUI1")
+screen.geometry("800x800")
+screen.configure(bg="#06a2d6")
+l1=tk.Label(text= "Welcome to GUI", width= 25, height=2, bg="grey",fg="black", font=("Arial",20))
+l1.place(x=200,y=50)
+l2=tk.Label(text= "Enter your name", width= 15, height=1, bg="yellow",fg="green", font=("Arial",20))
+l2.place(x=50,y=150)
+e1=tk.Entry(width=20)
+e1.place(x=400,y=150)
+l3=tk.Label(text= "Enter your adress", width= 25, height=1, bg="black",fg="white", font=("Arial",20))
+l3.place(x=50,y=250)
+t1=tk.Text(width=30, height=5)
+t1.place(x=500, y= 240)
+b1=tk.Button(text= "Submit", width= 20, height=1, bg="black",fg="white", font=("Arial",20))
+b1.place(x=270,y=650)
+l4=tk.Label(text= "select your gender", width= 18, height=1, bg="grey",fg="black", font=("Arial",20))
+l4.place(x=50,y=400)
+r1=tk.Radiobutton(text="male",value=0)
+r1.place(x=400,y=400)
+
+
+
+screen.mainloop()
